@@ -16,7 +16,6 @@ const MAX_TOKENS = 1500
 // Before going to production, move this fetch to a server-side endpoint
 // (Cloudflare Workers / Netlify Functions / Vercel Edge Functions) and
 // have the browser POST to your endpoint instead. See README "Roadmap".
-const API_KEY = import.meta.env.VITE_ANTHROPIC_API_KEY || ''
 
 /**
  * Hook that calls Claude with a prompt and parses the JSON response.
@@ -32,7 +31,8 @@ export function useAnthropicAPI() {
   const [error, setError] = useState(/** @type {string | null} */ (null))
 
   async function callClaude(prompt) {
-    if (!API_KEY) {
+    const apiKey = import.meta.env.VITE_ANTHROPIC_API_KEY || ''
+    if (!apiKey) {
       const message =
         'No Anthropic API key configured. Add VITE_ANTHROPIC_API_KEY to your .env file (see .env.example).'
       setError(message)
@@ -47,7 +47,7 @@ export function useAnthropicAPI() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'x-api-key': API_KEY,
+          'x-api-key': apiKey,
           'anthropic-version': ANTHROPIC_VERSION,
           // Required for direct browser fetches; otherwise the request is
           // rejected with a CORS-style error from the Anthropic API.
