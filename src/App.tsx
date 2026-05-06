@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import type { Screen } from './types';
 import AppHeader from './components/AppHeader';
 import BottomNav from './components/BottomNav';
 import HomeScreen from './components/HomeScreen';
@@ -8,11 +9,7 @@ import ScheduleScreen from './components/ScheduleScreen';
 import ConfessionScreen from './components/ConfessionScreen';
 import styles from './App.module.css';
 
-// Define the type for the screen
-export type Screen = 'home' | 'churches' | 'ai-exam' | 'schedule' | 'confession';
-
 export default function App() {
-  // Use the Screen type for the state
   const [screen, setScreen] = useState<Screen>('home');
 
   const renderScreen = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Screen } from '../App';
+import type { Screen } from '../types';
 
 interface ConfessionScreenProps {
   onNavigate: (screen: Screen) => void;

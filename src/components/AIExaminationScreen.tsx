@@ -1,5 +1,5 @@
 import React from 'react';
-import { Screen } from '../App';
+import type { Screen } from '../types'
 
 interface AIExaminationScreenProps {
   onNavigate: (screen: Screen) => void;

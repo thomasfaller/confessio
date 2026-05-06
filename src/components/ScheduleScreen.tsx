@@ -1,5 +1,5 @@
 import React from 'react';
-import { Screen } from '../App';
+import type { Screen } from '../types';
 
 interface ScheduleScreenProps {
   onNavigate: (screen: Screen) => void;
