@@ -52,7 +52,7 @@ type TimeValue  = typeof TIME_OPTIONS[number]['value'];
 type FocusValue = typeof FOCUS_OPTIONS[number]['value'];
 type DepthValue = typeof DEPTH_OPTIONS[number]['value'];
 
-function buildPrompt(state: StateValue, time: TimeValue, focus: FocusValue, depth: DepthValue): string {
+export function buildPrompt(state: StateValue, time: TimeValue, focus: FocusValue, depth: DepthValue): string {
   const stateLabel = STATE_OPTIONS.find(o => o.value === state)!.prompt;
   const timeLabel  = TIME_OPTIONS.find(o => o.value === time)!.prompt;
   const focusLabel = FOCUS_OPTIONS.find(o => o.value === focus)!.prompt;
