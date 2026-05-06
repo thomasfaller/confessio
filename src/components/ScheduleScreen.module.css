@@ -1,0 +1,117 @@
+.container { padding: 18px 18px 10px; }
+
+.sectionTitle { font-family: var(--font-display); font-size: 15px; color: var(--ink); font-weight: 400; margin-bottom: 3px; }
+.sectionSub   { font-size: 12px; color: var(--ink-soft); font-style: italic; margin-bottom: 14px; }
+.stepLabel    { font-size: 12px; color: var(--ink-soft); font-style: italic; margin-bottom: 5px; }
+
+.churchCard {
+  background: white;
+  border: 0.5px solid var(--parchment);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.churchCard:hover { border-color: var(--gold); }
+.churchCard.selected { border-color: var(--gold); background: #FFFDF5; }
+
+.churchName { font-family: var(--font-display); font-size: 14px; color: var(--ink); font-weight: 400; margin-bottom: 3px; }
+.churchAddr { font-size: 11px; color: var(--ink-soft); margin-bottom: 8px; }
+
+.slots { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.slot {
+  background: var(--parchment);
+  color: var(--ink-mid);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 0.5px solid transparent;
+  transition: border-color 0.15s, background 0.15s;
+}
+.slot:hover { border-color: var(--gold); }
+.slot.slotSelected { background: var(--ink); color: var(--gold); }
+
+.dateInput {
+  width: 100%;
+  background: white;
+  border: 0.5px solid var(--parchment);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 13px;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.reminders { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+
+.reminderBtn {
+  background: white;
+  border: 0.5px solid var(--parchment);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-family: var(--font-serif);
+  font-size: 12px;
+  color: var(--ink-mid);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.reminderBtn:hover { border-color: var(--gold); }
+.reminderBtn.reminderSelected { background: var(--ink); color: var(--gold); border-color: var(--ink); }
+
+.textarea {
+  width: 100%;
+  background: white;
+  border: 0.5px solid var(--parchment);
+  border-radius: 8px;
+  padding: 9px 10px;
+  font-size: 13px;
+  color: var(--ink);
+  min-height: 64px;
+  resize: none;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.confirmBtn {
+  width: 100%;
+  background: var(--ink);
+  border: none;
+  border-radius: 8px;
+  padding: 11px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+.confirmBtn:hover { opacity: 0.9; }
+.confirmBtn:disabled { opacity: 0.5; cursor: default; }
+
+.confirmBox {
+  background: var(--ink);
+  border-radius: 10px;
+  padding: 24px 16px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.confirmCross { font-size: 32px; color: var(--gold); margin-bottom: 10px; }
+.confirmTitle { font-family: var(--font-display); font-size: 18px; color: var(--gold); margin-bottom: 10px; }
+.confirmText  { font-size: 13px; color: var(--parchment); line-height: 1.8; }
+
+.confirmActions { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+
+.btn {
+  background: none;
+  border: 1px solid var(--parchment);
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 14px;
+  color: var(--ink-mid);
+  transition: border-color 0.2s;
+}
+.btn:hover { border-color: var(--gold); }
+.btn.primary { background: var(--ink); border-color: var(--ink); color: var(--gold); }
+.btn.primary:hover { opacity: 0.9; }

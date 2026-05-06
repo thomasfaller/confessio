@@ -1,0 +1,41 @@
+/* ── Design tokens ── */
+:root {
+  --cream: #F9F5EE;
+  --parchment: #EDE7D5;
+  --gold: #B8943F;
+  --gold-light: #D4AF60;
+  --ink: #2C2417;
+  --ink-mid: #5C4E35;
+  --ink-soft: #8B7A5E;
+  --burgundy: #6B2737;
+  --nav-h: 56px;
+  --font-serif: 'Crimson Pro', Georgia, serif;
+  --font-display: 'IM Fell English SC', Georgia, serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--cream);
+}
+
+body {
+  font-family: var(--font-serif);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-serif);
+}
+
+select, textarea, input {
+  font-family: var(--font-serif);
+}

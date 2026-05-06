@@ -1,0 +1,91 @@
+.container { display: flex; flex-direction: column; padding: 14px 18px 18px; min-height: calc(100vh - 56px - 90px); }
+
+.dots { display: flex; gap: 5px; justify-content: center; margin-bottom: 20px; }
+
+.dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--parchment);
+  transition: background 0.3s;
+}
+.dot.dotActive { background: var(--gold); }
+
+.stepBody { display: flex; flex-direction: column; flex: 1; }
+
+.stepLabel {
+  font-family: var(--font-display);
+  font-size: 12px;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.prayerBox {
+  background: white;
+  border-left: 3px solid var(--gold);
+  border-radius: 0 10px 10px 0;
+  padding: 14px;
+  flex: 1;
+  margin-bottom: 14px;
+}
+
+.prayerTitle {
+  font-family: var(--font-display);
+  font-size: 12px;
+  color: var(--gold);
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.prayerText {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--ink-mid);
+  white-space: pre-line;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background: none;
+  border: 1px solid var(--parchment);
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: var(--ink-mid);
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn:hover { border-color: var(--gold); color: var(--ink); }
+.btn.primary { background: var(--ink); border-color: var(--ink); color: var(--gold); }
+.btn.primary:hover { opacity: 0.9; }
+
+.absolution {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  padding: 20px;
+}
+
+.cross { font-size: 40px; color: var(--gold); }
+
+.absTitle {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.absText {
+  font-size: 14px;
+  color: var(--ink-soft);
+  font-style: italic;
+  line-height: 1.7;
+}

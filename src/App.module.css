@@ -1,0 +1,15 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 420px;
+  margin: 0 auto;
+  background: var(--cream);
+  position: relative;
+}
+
+.main {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: var(--nav-h);
+}

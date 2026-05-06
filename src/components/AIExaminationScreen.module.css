@@ -1,0 +1,148 @@
+.container { padding: 18px 18px 10px; }
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 15px;
+  color: var(--ink);
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.sectionSub {
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.profileGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.field {}
+
+.fieldLabel {
+  display: block;
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-bottom: 3px;
+}
+
+.select {
+  width: 100%;
+  background: white;
+  border: 0.5px solid var(--parchment);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 13px;
+  color: var(--ink);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.generateBtn {
+  width: 100%;
+  background: var(--ink);
+  border: none;
+  border-radius: 8px;
+  padding: 11px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.generateBtn:hover { opacity: 0.9; }
+.generateBtn:disabled { opacity: 0.5; cursor: default; }
+
+.error {
+  background: #FEF2F2;
+  border: 0.5px solid #FECACA;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 12px;
+  color: #7F1D1D;
+  margin-bottom: 12px;
+}
+
+.catTitle {
+  font-family: var(--font-display);
+  font-size: 12px;
+  color: var(--gold);
+  margin: 12px 0 4px;
+  letter-spacing: 0.5px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 9px 0;
+  border-bottom: 0.5px solid #F5F0E8;
+  cursor: pointer;
+}
+
+.item:last-child { border-bottom: none; }
+
+.check {
+  width: 17px;
+  height: 17px;
+  border: 1.5px solid var(--parchment);
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 11px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.item.checked .check {
+  background: var(--parchment);
+  border-color: var(--gold);
+}
+
+.question {
+  font-size: 13px;
+  color: var(--ink-mid);
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 0;
+}
+
+.btn {
+  background: none;
+  border: 1px solid var(--parchment);
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 14px;
+  color: var(--ink-mid);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn:hover { border-color: var(--gold); color: var(--ink); }
+
+.btn.primary {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--gold);
+}
+
+.btn.primary:hover { opacity: 0.9; }
